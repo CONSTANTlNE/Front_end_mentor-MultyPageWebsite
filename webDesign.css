@@ -1,0 +1,304 @@
+.pageDescription {
+  width: 90%;
+  max-width: 69.4375rem;
+  height: 15.75rem;
+  background-color: var(--Peach-primary);
+  border-radius: 1rem;
+  margin: 0 auto;
+  margin-top: 4rem;
+  margin-bottom: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  text-align: center;
+}
+
+.pageDescription p {
+  max-width: 25rem;
+  color: var(--White-primary);
+}
+
+.projects {
+  width: 90%;
+  max-width: 69.4375rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.875rem;
+  margin-bottom: 10rem;
+}
+.projects img {
+  max-width: 21.875rem;
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+}
+.projects__item h3 {
+  color: var(--Peach-primary);
+}
+.projects__item:hover h3 {
+  color: var(--White);
+}
+
+.projects__item {
+  display: flex;
+  flex-direction: column;
+
+  cursor: pointer;
+}
+
+.projects__item:hover .projects__item--descr {
+  background: var(--Peach-primary);
+  color: white;
+}
+
+.projects__item--descr {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  background: hsl(14, 76%, 97%);
+  color: var(--Black-primary);
+  border-bottom-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  height: 9.875rem;
+}
+
+.projects__item--descr p {
+  text-align: center;
+  max-width: 17.875rem;
+}
+
+.servicesList {
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 850px) {
+  .projects__item--descr {
+    height: 19.375rem;
+    width: 100%;
+    border-top-right-radius: 1rem;
+  }
+  .projects__item--descr p {
+    width: 16.75rem;
+  }
+  .projects {
+    grid-template-columns: 1fr;
+  }
+  .projects img {
+    height: 19.375rem;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 1rem;
+  }
+  .projects__item {
+    flex-direction: row;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .projects__item {
+    flex-direction: column;
+  }
+
+  .pageDescription {
+    width: 100%;
+    border-radius: 0rem;
+    margin-bottom: 6rem;
+  }
+  .projects img {
+    border-top-right-radius: 1rem;
+    border-bottom-left-radius: 0rem;
+    width: 20rem;
+  }
+
+  .projects__item--descr {
+    border-top-right-radius: 0rem;
+    height: 10rem;
+    width: 20rem;
+  }
+  .webDesign {
+    height: 15.625rem;
+  }
+}
+
+.webDesign {
+  grid-row: 1 / span 1;
+  height: 19.25rem;
+}
+
+/* ===========ABOUT============== */
+
+.about_main {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 10rem;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3.75rem;
+}
+
+.about,
+.contact {
+  width: 100%;
+  max-width: 69.4375rem;
+  height: 30rem;
+  display: flex;
+  background: var(--Peach-primary);
+  margin: 0 auto;
+  border-radius: 1rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about__content,
+.contact__content {
+  margin: 0 auto;
+}
+.about__text,
+.contact__text {
+  margin-top: 2rem;
+  max-width: 28.625rem;
+  color: var(--White-primary);
+}
+
+.about__photo {
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  background: url("assets/about/desktop/image-about-hero.jpg");
+  width: 29.75rem;
+
+  height: 30rem;
+}
+
+/* ================================ */
+.about__textOne,
+.about__textTwo {
+  width: 100%;
+  max-width: 69.4375rem;
+  display: flex;
+  background: hsl(14, 76%, 97%);
+  margin: 0 auto;
+  border-radius: 1rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about__textOne h2,
+.about__textTwo h2 {
+  color: var(--Peach-primary);
+  margin-bottom: 1.5rem;
+}
+
+.about__photo2 {
+  background: url("assets/about/desktop/image-world-class-talent.jpg");
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  width: 29.75rem;
+  height: 40rem;
+}
+
+.about__photo3 {
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  background: url("assets/about/desktop/image-real-deal.jpg");
+  width: 29.75rem;
+  height: 40rem;
+}
+.about__textOne--container,
+.about__textTwo--container {
+  max-width: 27.8125rem;
+  margin: 0 auto;
+}
+
+.companyApproach a {
+  width: 9.5rem;
+  height: 3.5rem;
+  background: var(--Peach-primary);
+  color: var(--White-primary);
+  border-radius: 0.5rem;
+  text-align: center;
+  line-height: 3.5rem;
+}
+
+.companyApproach a:hover {
+  background: var(--Peach-secondary);
+}
+
+@media screen and (max-width: 800px) {
+  .about,
+  .about__textOne,
+  .about__textTwo {
+    flex-direction: column;
+    text-align: center;
+    min-height: 43rem;
+  }
+  .companyApproach {
+    flex-direction: column;
+  }
+  .about__photo {
+    background: url("assets/about/tablet/image-about-hero.jpg");
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    order: 1;
+    border-top-left-radius: 1rem;
+    border-bottom-right-radius: 0rem;
+  }
+  .about__content {
+    order: 2;
+  }
+
+  .about__photo2 {
+    background: url("assets/about/tablet/image-world-class-talent.jpg");
+    width: 100%;
+    height: 20rem;
+    background-size: cover;
+    border-bottom-left-radius: 0rem;
+    border-top-right-radius: 1rem;
+  }
+  .about__photo3 {
+    background: url("assets/about/tablet/image-real-deal.jpg");
+    order: 1;
+    width: 100%;
+    height: 20rem;
+    border-top-left-radius: 1rem;
+    border-bottom-right-radius: 0rem;
+  }
+
+  .about__textTwo--container {
+    order: 2;
+  }
+
+  .about__content,
+  .about__textOne--container,
+  .about__textTwo--container {
+    padding: 4rem 1.5rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .about_main {
+    width: 100%;
+    gap: 0rem;
+  }
+
+  .about,
+  .about__textOne,
+  .about__textTwo {
+    border-radius: 0rem;
+  }
+
+  .about__photo,
+  .about__photo2,
+  .about__photo3 {
+    border-radius: 0rem;
+  }
+
+  .companyApproach {
+    margin: 7.5rem 0;
+  }
+}
